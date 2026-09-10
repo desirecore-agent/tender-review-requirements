@@ -1,0 +1,65 @@
+{
+  "contract_version": "v1.2",
+  "coverage_id": "illustration-coverage",
+  "manifest_id": "illustration-manifest",
+  "coverage_closed": true,
+  "planned_items": 6,
+  "completed_items": 5,
+  "failed_items": 0,
+  "unchecked_items": 1,
+  "coverage_file_ids": [
+    "example-tender",
+    "example-addendum",
+    "example-bid"
+  ],
+  "excluded": [],
+  "items": [
+    {
+      "item_id": "example-ct1",
+      "file_id": "example-tender",
+      "location": "body:1",
+      "method": "text_read",
+      "status": "checked",
+      "notes": "Read both original delivery and schedule duties / 读取原交付及进度表两项义务"
+    },
+    {
+      "item_id": "example-ct2",
+      "file_id": "example-tender",
+      "location": "body:2",
+      "method": "text_read",
+      "status": "checked",
+      "notes": "Read the complete OR group / 读取完整 OR 组"
+    },
+    {
+      "item_id": "example-ca1",
+      "file_id": "example-addendum",
+      "location": "body:1",
+      "method": "text_read",
+      "status": "checked",
+      "notes": "Read limited deadline change and unchanged-scope statement / 读取有限期限修改及未改范围说明"
+    },
+    {
+      "item_id": "example-cb1",
+      "file_id": "example-bid",
+      "location": "body:1",
+      "method": "text_read",
+      "status": "checked",
+      "notes": "Read delivery commitment; no schedule at this location / 读取交付承诺，该处未见进度表"
+    },
+    {
+      "item_id": "example-cb2",
+      "file_id": "example-bid",
+      "location": "body:2",
+      "method": "text_read",
+      "status": "checked",
+      "notes": "Read contract proof alternative; no schedule at this location / 读取合同证明备选，该处未见进度表"
+    },
+    {
+      "item_id": "example-c-schedule-timing",
+      "file_id": "example-tender",
+      "location": "body:1",
+      "status": "unchecked",
+      "reason": "Whether the schedule must accompany the bid cannot be resolved from these sources; authorized clarification is required / 现有来源无法确定进度表是否须随投标提交，需要有权澄清"
+    }
+  ]
+}

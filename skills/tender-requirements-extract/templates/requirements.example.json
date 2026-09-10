@@ -1,0 +1,62 @@
+{
+  "contract_version": "v1.2",
+  "matrix_id": "illustration-matrix",
+  "manifest_id": "illustration-manifest",
+  "requirements": [
+    {
+      "requirement_id": "example-delivery-old",
+      "source_file_id": "example-tender",
+      "location": "body:1",
+      "source_quote": "应在合同生效后30日内交付，并提交实施进度表。",
+      "subject": "Original delivery-deadline component / 原交付期限成分",
+      "requirement_type": "substantive_response",
+      "status": "superseded",
+      "superseded_by": "example-delivery-new",
+      "quantifier": "30日内 / within 30 days",
+      "condition": "After the contract becomes effective / 合同生效后",
+      "notes": "Only the delivery-deadline component is superseded by example-addendum body:1. The schedule duty is preserved as example-schedule. / 仅交付期限成分被 example-addendum body:1 替代，进度表义务保留为 example-schedule。"
+    },
+    {
+      "requirement_id": "example-delivery-new",
+      "source_file_id": "example-addendum",
+      "location": "body:1",
+      "source_quote": "交付期限修改为合同生效后45日内，其余要求不变。",
+      "subject": "Amended delivery-deadline component / 修改后的交付期限成分",
+      "requirement_type": "substantive_response",
+      "status": "active",
+      "quantifier": "45日内 / within 45 days",
+      "condition": "After the contract becomes effective / 合同生效后",
+      "notes": "Illustration assumes applicable publication/version authority is established. It modifies the deadline in example-tender body:1 only; other duties remain. / 演示假设适用发布/版本权威已确认，仅修改 example-tender body:1 的交付期限，其他义务不变。"
+    },
+    {
+      "requirement_id": "example-schedule",
+      "source_file_id": "example-tender",
+      "location": "body:1",
+      "source_quote": "并提交实施进度表。",
+      "subject": "Surviving implementation schedule duty / 继续有效的实施进度表义务",
+      "requirement_type": "substantive_response",
+      "status": "pending_review",
+      "proof_requirement": "Implementation schedule; submission stage and timing require clarification / 实施进度表；提交阶段及时点待澄清",
+      "notes": "Original duty in example-tender body:1; example-addendum body:1 explicitly preserves the remaining requirements. The source does not establish submission with the bid or rejection consequences; applicability at the bid-review stage remains pending. / 原义务位于 example-tender body:1；example-addendum body:1 明确保留其余要求，原文未明确须随投标提交或否决后果；在投标审查阶段的适用性待确认。"
+    },
+    {
+      "requirement_id": "example-capability-option",
+      "source_file_id": "example-tender",
+      "location": "body:2",
+      "source_quote": "服务能力可由服务证书或同类合同证明。",
+      "subject": "Alternative service-capability proof / 服务能力证明备选",
+      "requirement_type": "qualification",
+      "status": "active",
+      "logic": "or",
+      "proof_requirement": "Service certificate OR similar contract; either alternative satisfies this duty / 服务证书或同类合同，任一备选满足该义务",
+      "notes": "One OR group; do not create two mandatory requirements. No rejection consequence is assumed. / 保留一个 OR 组，不建立两项并列强制义务，不假定否决后果。"
+    }
+  ],
+  "supersede_relations": [
+    {
+      "original_requirement_id": "example-delivery-old",
+      "superseding_requirement_id": "example-delivery-new",
+      "relation_type": "modifies"
+    }
+  ]
+}

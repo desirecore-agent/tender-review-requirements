@@ -1,0 +1,44 @@
+{
+  "contract_version": "v1.2",
+  "findings_id": "illustration-findings",
+  "manifest_id": "illustration-manifest",
+  "findings": [
+    {
+      "issue_id": "example-schedule-timing",
+      "severity": "informational",
+      "certainty": "uncertain",
+      "summary": "Implementation schedule submission timing requires clarification / 实施进度表提交时点需要澄清",
+      "description": "The amendment preserves the schedule duty, but neither source establishes that the schedule must accompany the bid. Its absence from both bid lines is only a content observation, not a confirmed bid deficiency. The submission stage must be clarified before assessing noncompliance. / 补遗保留进度表义务，但两份来源均未明确须随投标提交；投标两行未见进度表仅为内容观察，不是确定的投标缺件，须澄清提交阶段后才能评估不符合。",
+      "observation_method": "text_comparison",
+      "requirement_refs": [
+        {
+          "requirement_id": "example-schedule",
+          "file_id": "example-tender",
+          "location": "body:1"
+        },
+        {
+          "requirement_id": "example-delivery-new",
+          "file_id": "example-addendum",
+          "location": "body:1"
+        }
+      ],
+      "bid_evidence": [
+        {
+          "file_id": "example-bid",
+          "evidence_type": "absence",
+          "searched_coverage_item_ids": [
+            "example-cb1",
+            "example-cb2"
+          ],
+          "observation": "Both lines are the entire synthetic bid and contain no schedule; this does not establish a bid-stage omission because the required submission timing is unresolved / 两行为合成投标全文且未见进度表；因要求提交时点未决，这不证明投标阶段缺件"
+        }
+      ],
+      "image_evidence": [],
+      "review_status": "pending_review",
+      "limitations": [
+        "These sources establish a schedule duty but not submission with the bid; authorized timing clarification and independent source review remain necessary / 这些来源确立了进度表义务，但未明确随投标提交，仍需有权时点澄清及独立来源复核"
+      ],
+      "recommendation": "Ask the authorized party to clarify the submission stage and timing, then reassess applicability; do not classify the current bid as missing a required attachment on these sources alone / 请有权方澄清提交阶段及时点，再核对适用性；不单凭现有来源将当前投标判为缺少必需附件"
+    }
+  ]
+}

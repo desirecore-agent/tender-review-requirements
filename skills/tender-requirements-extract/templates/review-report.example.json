@@ -1,0 +1,31 @@
+{
+  "contract_version": "v1.2",
+  "report_id": "illustration-report",
+  "scope": "Illustrative contract contribution: complete two-line tender, one-line addendum and two-line bid; no real procurement decision / 演示契约贡献：两行招标、一行补遗及两行投标全文，不作真实采购决定",
+  "inputs_version": {
+    "manifest_id": "illustration-manifest"
+  },
+  "coverage_ref": {
+    "coverage_id": "illustration-coverage",
+    "coverage_closed": true,
+    "planned_items": 6,
+    "completed_items": 5,
+    "failed_items": 0,
+    "unchecked_items": 1
+  },
+  "conclusion": "partial_only",
+  "unresolved": [
+    "example-schedule-timing: clarify whether and when the schedule is required at bid stage, then obtain lead consolidation and independent review / example-schedule-timing：澄清进度表是否须在投标阶段提交及其时点，再由总审合并并独立复核"
+  ],
+  "unchecked_items": [
+    {
+      "item": "example-c-schedule-timing",
+      "reason": "Bid-stage applicability and submission timing are unresolved in the supplied sources / 所提供来源中的投标阶段适用性及提交时点未明确"
+    }
+  ],
+  "tool_failures": [],
+  "review_summary": null,
+  "disclaimers": [
+    "Illustration only; assistance does not replace authorized formal evaluation or guarantee an award / 仅用于演示，辅助审查不替代有权正式评审，不保证中标"
+  ]
+}
