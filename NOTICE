@@ -2,8 +2,8 @@
 
 Tender Requirements Auditor — DesireCore Contributors.
 
-This package is distributed under the MIT License; see [LICENSE](LICENSE). DesireCore is a separate platform with its own license terms. This package does not bundle a second contract Schema implementation or third-party executable dependencies. Its four JSON examples are illustrative payloads governed by the installed team's shared v1.2 contracts.
+This package is distributed under the MIT License; see [LICENSE](LICENSE). DesireCore is a separate platform with its own license terms. No third-party executable dependencies are bundled. The four JSON examples are optional legacy structured-export illustrations, not requirements for business completion.
 
 The package supplies review assistance, not legal advice, formal audit, evidence authentication, a guarantee of award or authority to submit a bid. Authorized people or institutions make formal eligibility, rejection and submission decisions. Cloud processing depends on the user's authorized provider configuration; supplied documents and images are not licensed for redistribution by this package.
 
-Matching contract and Evidence-runtime checks, source re-reading and independent review are required for each actual use. Template validity does not establish the completeness or correctness of a user's review.
+Professional quality is assessed by material coverage, sound findings, traceable evidence and useful recommendations. Template validity does not establish the completeness or correctness of a review.
