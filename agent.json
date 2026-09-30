@@ -1,6 +1,6 @@
 {
   "$schema": "https://desirecore.net/schemas/agentfs/v1/agent-config.json",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "llm": {
     "routingMode": "fixed",
     "smart": {
@@ -41,5 +41,12 @@
   "max_concurrent_sessions": 3,
   "id": "66faede6-91ce-440e-8a46-0dd322a6301c",
   "name": "条款响应审查员",
-  "description": "条款响应审查员：提取招标资格、否决、响应和评分要求；核对原始义务与补遗剩余义务"
+  "description": "条款响应审查员：提取招标资格、否决、响应和评分要求；核对原始义务与补遗剩余义务",
+  "avatar": {
+    "char": "条",
+    "color": "blue",
+    "image": {
+      "path": "assets/avatar.webp"
+    }
+  }
 }
